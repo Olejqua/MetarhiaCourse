@@ -1,2 +1,0 @@
-# MetarhiaCourse
-Created with CodeSandbox
