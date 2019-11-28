@@ -1,5 +1,3 @@
-import "./styles.css";
-
 document.getElementById("app").innerHTML = `
 <h3>Hello Vanilla!</h3>
 <div>Chek console pls</br></br>
