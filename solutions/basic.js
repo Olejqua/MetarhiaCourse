@@ -8,6 +8,7 @@ document.getElementById("app").innerHTML = `
 //identificators
 let name = "Oleg";
 const YEAR = 1995;
+
 //console.log(`${name} was born in ${YEAR}`);
 
 const helloFunc = name => `Hello ${name}`;
@@ -21,7 +22,9 @@ const range = (start, end) => {
   }
   return result;
 };
+
 //console.log("range", range(30, 15));
+
 
 const rangeOdd = (start, end) => {
   const result = [];
@@ -30,6 +33,7 @@ const rangeOdd = (start, end) => {
   }
   return result;
 };
+
 //console.log("rangeOdd", rangeOdd(15, 30));
 
 //functions
@@ -42,6 +46,7 @@ const square = x => x ** 2;
 const cube = x => x ** 3;
 //console.log(cube(111));
 
+
 const calculate = () => {
   const result = [];
   for (let i = 0; i < 10; i++) {
@@ -52,7 +57,9 @@ const calculate = () => {
   }
   return result;
 };
+
 //console.log(calculate());
+
 
 //objects
 
@@ -68,16 +75,20 @@ person1.name = "Fred";
 person2.name = "Jan";
 person1.age = 23;
 person2.age = 25;
+
 //console.log(person2);
 
 person2 = { name: "Bob", age: 18 };
 //console.log(person1);
 //console.log(person2);
 
+
 const createUser = (name, city) => ({ name, city });
 
 const person3 = createUser("Oleg", "Sankt-Peterburg");
+
 //console.log(person3);
+
 
 //Collections
 
@@ -102,7 +113,9 @@ const findPhoneByName = name => {
   }
   return "People is not define";
 };
+
 //console.log(findPhoneByName("Oleg"));
+
 
 const hashNumBooks = {
   Anna: 89911223300,
@@ -111,6 +124,7 @@ const hashNumBooks = {
 };
 
 const hashFindPhoneByName = name => hashNumBooks[name];
+
 //console.log(hashFindPhoneByName("Anna"));
 
 //console.log('---lesson 2---')
