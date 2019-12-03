@@ -163,7 +163,6 @@ const keys = {
 const typeCount = (arr, types) => {
   for (let val of arr) {
     const type = typeof val;
-    console.log(val);
     if (Array.isArray(val)) {
       types.array += 1;
     } else {
@@ -172,5 +171,20 @@ const typeCount = (arr, types) => {
   }
 };
 typeCount(arr, keys);
-console.log(keys);
-console.log(arr.length);
+//console.log(keys);
+//console.log(arr.length);
+
+const typeCountW = arr => {
+  const res = {};
+  for (let val of arr) {
+    const type = typeof val;
+    if (Array.isArray(val)) {
+      res.array ? (res.array += 1) : (res.array = 1);
+    } else {
+      res[type] ? (res[type] += 1) : (res[type] = 1);
+    }
+  }
+  return res;
+};
+
+//console.log(typeCountW(arr))
