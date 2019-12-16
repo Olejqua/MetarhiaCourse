@@ -1,8 +1,15 @@
 'use strict';
-const random = require('./1-random');
 
 const generateKey = (length, possible) => {
-    
+    let res = '';
+    if (length && possible) {
+        for (let i = 0; i < length; i++) {
+            res += possible[Math.floor(Math.random() * possible.length)]
+        }
+    } else {
+        res = 'please enter length and possible'
+    }
+    return res
 };
 
-console.log(generateKey(20, "qwerty123456"))
+module.exports = { generateKey };
